@@ -1,0 +1,260 @@
+body{
+    padding-top: 65px;
+    padding-left: 96px;
+    padding-right: 25px;
+    background-color: rgb(250, 250, 250);
+}
+#preview-img{
+    width: 100%;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.preview{
+    position: relative;
+}
+#profile-img{
+    width: 100%;
+    margin-top: 8px;
+}
+#profile-img1{
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 20px;
+}
+.video-des{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 10px;
+}
+.title{
+    font-family: Roboto;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.author{
+    font-family: Roboto,Arial;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+    margin-top: 6px;
+    margin-bottom: 2px;
+
+}
+.time{
+    font-family: Roboto,Arial;
+    font-size: 14px;
+    color:rgb(96,96,96);
+    font-weight: 400;   
+    margin-top: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 16px;
+}
+#preview-img:hover{
+    border-radius: 0px;
+}
+#srb{
+    padding-left: 16px;
+    height: 30px;
+    border: 1px solid gray;
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+    font-size: 15px;
+    flex: 1;
+}
+#srb::placeholder{
+    font-size: 15px;
+    font-family: Roboto,Arial;
+}
+#hbm{
+    width: 25px;    
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#ytl{
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgb(200, 200, 200);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    padding-top: 10px;
+    z-index: 1;
+}
+.Left{
+    display: flex;
+    align-items: center;
+}
+
+.mid{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 250px;
+    margin-right: 100px;
+}
+
+.Right{
+    display: flex;
+    flex: 1fr;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+#ysb{
+    width: 50px;
+    height: 33.34px;
+    border: 1px solid gray;
+    margin-left: -3px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(242, 242, 242);
+    position: relative;
+}
+#vsi,#ui,#yai,#ni{
+    width: 100%;
+}
+#ysi{
+    width:25px;
+}
+#vsb{
+    margin-left: 20px;
+    width: 38px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(248, 248, 248);
+    position: relative;
+}
+#ub,#yab,#nb{
+    width: 40px;
+    margin-right: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+#myprof{
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.side-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 58px;
+    width: 85px;
+    background-color: white;
+    border-right: 0.5px solid rgb(234, 232, 232);
+    padding-top: 5px;
+    z-index: 100;
+}
+.sl{
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sl:hover{
+    background-color: lightgray;
+}
+.sdimg{
+    height: 30px;
+}
+.sl div{
+    font-size: 11px;
+    font-family: Roboto,Arial;
+}
+.hstt{
+    background-color: gray;
+    color: white;
+    font-size: 12px;
+    padding: 2px 2px;
+    width: 50px;
+    position: absolute;
+    bottom: -25px;
+    right: -2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+#ysb:hover .hstt{
+    opacity: 1;
+}
+.vstt{
+    background-color: gray;
+    position: absolute;
+    color: white;
+    width: 140px;
+    padding: 2px 1px;
+    font-size: 12px;
+    bottom: -21.5px;
+    left: -45px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+#vsb:hover .vstt{
+    opacity: 1;
+}
+.ustt,.astt,.nstt{
+    background-color: gray;
+    position: absolute;
+    color: white;
+    padding: 2px 2px;
+    font-size: 12px;
+    bottom: -22px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+
+#ub:hover .ustt,#yab:hover .astt,#nb:hover .nstt{
+    opacity: 1;
+}
+
+.at,.bt,.ct,.dt,.et,.ft{
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-size: 14px;
+    padding: 2px 2px;
+    font-family: Roboto,Arial;
+    bottom: 8px;
+    right: 8px;
+}
+
+.nnc{
+    background-color: red;
+    color: white;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 25px;
+    font-size: 12px;
+    top: 2px;
+    right: 8px;
+}
